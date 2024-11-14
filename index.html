@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookshop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <h1 class="nav_logo">Bookshop</h1>
+            <nav class="nav">
+                <ul class="nav_nav">
+                    <li class="nav_list nav_list-active">books</li>
+                    <li class="nav_list">audiobooks</li>
+                    <li class="nav_list">Stationery & gifts</li>
+                    <li class="nav_list">blog</li>
+                </ul>
+            </nav>
+            <div class="nav_button">
+                <button class="nav_button-logo">
+                    <img src="images/user.svg">
+                </button>
+                <button class="nav_button-logo">
+                    <img src="images/search.svg">
+                </button>
+                <button class="nav_button-logo">
+                    <img src="images/shopbag.svg">
+                    <img class="bange_btn" src="images/bange.png">
+                    
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="catalogs">
+            <div class="catalog_first catalog_catalog catalog_active">
+                <img class="catalog_first-fon" src="images/fonfirst.png">
+                <h1 class="catalog_first-title">Black friday sale</h1>
+                <p class="catalog_first-text">up to</p>
+                <p class="catalog_first-text-fon">up to</p>
+                <p class="catalog_first-number">60</p>
+                <p class="catalog_first-number-fon">60</p>
+                <p class="catalog_first-prosent">%</p>
+                <p class="catalog_first-prosent-fon">%</p>
+                <img class="catalog_first-img" src="images/illustration.png">
+            </div>
+
+            <div class="catalog_catalog catalog_second">
+                <img src="images/fonsecond.png" alt="" class="catalog_second-fon">
+                <h1 class="catalog_second-title">for entrepreneurs</h1>
+                <p class="catalog_second-text">top</p>
+                <p class="catalog_second-text-fon">top</p>
+                <p class="catalog_second-number">10</p>
+                <p class="catalog_second-number-fon">10</p>
+                <p class="catalog_second-books">books</p>
+                <p class="catalog_second-books-fon">books</p>
+            </div>
+
+            <div class="catalog_catalog catalog_tree">
+                <img src="images/fontree.png" alt="" class="catalog_tree-fon">
+                <h1 class="catalog_tree-title">Check out</h1>
+                <p class="catalog_three">OUR<br>cozy books<br>Selection</p>
+                <p class="catalog_three-fon">OUR<br>cozy books<br>Selection</p>
+            </div>
+        <div class="slider_dots">
+            <svg class="slider__dots-item dots_active" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="6" cy="6" r="6" fill="#9E98DC" />
+              </svg>
+            <svg class="slider__dots-item" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="6" cy="6" r="6" fill="#EFEEF6" />
+              </svg>
+              <svg class="slider__dots-item" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="6" cy="6" r="6" fill="#EFEEF6" />
+              </svg>                         
+        </div>
+
+        <div class="catalog_baner-first">
+            <p class="baner-first-text">Change<br>old book<br>on new</p>
+            <svg class="baner_line" width="57" height="14" viewBox="0 0 57 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 7H54" stroke="#1C2A39" stroke-width="2" />
+                <path d="M48 1L55 7L48 13" stroke="#1C2A39" stroke-width="2" />
+              </svg>
+        </div>
+        <div class="catalog_baner-second">
+            <p class="baner-second-text">Top<br>100<br>books<br>2022</p>
+            <svg class="baner_line" width="57" height="14" viewBox="0 0 57 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 7H54" stroke="#1C2A39" stroke-width="2" />
+                <path d="M48 1L55 7L48 13" stroke="#1C2A39" stroke-width="2" />
+              </svg>
+        </div>
+    </div>
+
+    <section>
+        <div class="categories">
+            <ul class="categories_list">
+                <li class="categories_link categories_link_active">Architecture</li>
+                <li class="categories_link">Art & Fashion</li>
+                <li class="categories_link">Biography</li>
+                <li class="categories_link">Business</li>
+                <li class="categories_link">Crafts & Hobbies</li>
+                <li class="categories_link">Drama</li>
+                <li class="categories_link">Fiction</li>
+                <li class="categories_link">Food & Drink</li>
+                <li class="categories_link">Health & Wellbeing</li>
+                <li class="categories_link">History & Politics</li>
+                <li class="categories_link">Humor</li>
+                <li class="categories_link">Poetry</li>
+                <li class="categories_link">Psychology</li>
+                <li class="categories_link">Science</li>
+                <li class="categories_link">Technology</li>
+                <li class="categories_link">Travel & Maps</li>
+            </ul>
+        </div>
+        <div id="books-container"></div>
+    </section>
+    <button class="btn_btn">Load more</button>
+    </main>
+    <script src="javascript.js"></script>
+    <script src="books.js"></script>
+</body>
+</html>
